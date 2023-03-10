@@ -13,11 +13,42 @@ html {
 }
 
 .meme {
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center;  
 }
 
 .meme__title {
   align-self: baseline;
+}
+
+.meme__input {
+  display: none;
+}
+
+.meme__btn-line,
+.meme__btn-line::after {
+  position: absolute;
+  display: block;
+  background-color: #000000;
+}
+
+.meme__btn-line {
+  right: 5px;
+  top: 31px;
+  width: 20px;
+  height: 3px;
+}
+
+.meme__btn-line::after {
+  content: "";
+  right: 8px;
+  top: -8px;
+  width: 3px;
+  height: 20px;
+}
+
+.meme__img {
+  max-width: 80vw;
 }
