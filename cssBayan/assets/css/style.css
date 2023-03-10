@@ -1,0 +1,23 @@
+html {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.body {
+  background-color: #f6f6ec;
+}
+
+.wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.meme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.meme__title {
+  align-self: baseline;
+}
