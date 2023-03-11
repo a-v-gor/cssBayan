@@ -37,7 +37,7 @@ html {
   flex-direction: column;
   align-items: center;
   padding: 2rem 0;
-  border-top: 2px solid #d3d3d3;
+  border-top: 0.2rem solid #d3d3d3;
 }
 
 .meme__title {
