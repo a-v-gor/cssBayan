@@ -59,7 +59,7 @@ html {
   background-position: center;
   background-size: 2.2rem;
   background-repeat: no-repeat;
-  opacity: 0;
+  
   transition-duration: 0.5s;
 }
 
@@ -71,28 +71,42 @@ html {
   transition-duration: 0.5s;
 }
 
-.wrapper:hover .meme__sign {
-  opacity: 1;
-}
-
-.wrapper:hover .meme__title,
-.meme__input:checked + .meme__btn > .meme__title {
-  color: #000000;
-}
-
 .meme__input:checked + .meme__btn > .meme__sign {
   transform: rotate(45deg);
 }
 
-.meme__btn:hover {
-  cursor: pointer;
+.meme__input:checked + .meme__btn > .meme__title {
+  color: #000000;
 }
 
-.meme:hover > .meme__btn > .meme__img,
 .meme__input:checked + .meme__btn > .meme__img {
   height: 34.2rem;
   padding-top: 1rem;
   opacity: 1;
+}
+
+@media (hover: hover) {
+  .meme__sign {
+    opacity: 0;
+  }
+
+  .wrapper:hover .meme__sign {
+    opacity: 1;
+  }
+
+  .wrapper:hover .meme__title {
+    color: #000000;
+  }
+
+  .meme__btn:hover {
+    cursor: pointer;
+  }
+
+  .meme:hover > .meme__btn > .meme__img {
+    height: 34.2rem;
+    padding-top: 1rem;
+    opacity: 1;
+  }
 }
 
 .meme:active {
