@@ -32,7 +32,6 @@ html {
 }
 
 .meme {
-  padding: 2rem 0;
   border-top: 0.2rem solid #d3d3d3;
 }
 
@@ -43,6 +42,7 @@ html {
 .meme__btn {
   display: grid;
   grid-template-columns: 1fr 2rem;
+  padding: 2rem 0;
 }
 
 .meme__title {
@@ -59,7 +59,6 @@ html {
   background-position: center;
   background-size: 2.2rem;
   background-repeat: no-repeat;
-  
   transition-duration: 0.5s;
 }
 
